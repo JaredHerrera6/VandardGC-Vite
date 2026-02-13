@@ -17,12 +17,14 @@ import Fence from "./routes/Fence";
 
 function App() {
   return (
+    <>
+    
     <div className="page-container">
       <Router>
         <div className="navbar-container">
-          <Navbar />
+          
         </div>
-
+        <Navbar/>
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -42,6 +44,7 @@ function App() {
         <Footer />
       </Router>
     </div>
+    </>
   );
 }
 
