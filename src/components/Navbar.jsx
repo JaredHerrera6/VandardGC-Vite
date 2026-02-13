@@ -140,7 +140,7 @@ export default function Navbar() {
 
             {/* Services Dropdown */}
             <li className="relative group">
-              <a href="Services">
+              <Link to="/Services">
               <button className="flex  items-center gap-1 hover:text-white transition">
                 Services <ChevronDown size={16} />
               </button>
@@ -159,7 +159,7 @@ export default function Navbar() {
                   ))}
                 </ul>
               </div>
-              </a>
+              </Link>
             </li>
             {links.map((link) => (
               <li key={link.name}>
