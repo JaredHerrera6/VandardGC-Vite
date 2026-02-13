@@ -22,7 +22,7 @@ function App() {
     <div className="page-container">
       <Router>
         <div className="navbar-container">
-          
+
         </div>
         <Navbar/>
         <main>
