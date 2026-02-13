@@ -176,14 +176,14 @@ export default function Navbar() {
           </ul>
 
           {/* CTA Button */}
-          <motion.a
+          <motion.link
             href="/ContactUs"
             whileTap={{ scale: 0.95 }}
             whileHover={{ scale: 1.05 }}
             className="bg-red-900 text-white px-5 py-2 rounded-xl font-semibold shadow-md hover:bg-red-950 transition"
           >
             Call Us Today!
-          </motion.a>
+          </motion.link>
         </div>
 
         
