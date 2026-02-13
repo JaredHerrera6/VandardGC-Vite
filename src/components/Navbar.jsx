@@ -90,7 +90,7 @@ export default function Navbar() {
     { name:"Our Work", href:"/Gallery"}
   ];
   const mobileLinks =[
-    { name:"Home", href:"/Home"},
+    { name:"Home", href:"/"},
     { name:"Services", href:"/Services"},
     { name:"Concrete Installations", href:'/Concrete'},
     { name:"Retaining Walls", href:"/Walls"},
@@ -177,7 +177,7 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <motion.a
-            href={ContactUs}
+            href="/ContactUs"
             whileTap={{ scale: 0.95 }}
             whileHover={{ scale: 1.05 }}
             className="bg-red-900 text-white px-5 py-2 rounded-xl font-semibold shadow-md hover:bg-red-950 transition"
