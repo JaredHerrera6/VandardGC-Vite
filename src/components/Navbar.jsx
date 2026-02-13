@@ -107,7 +107,7 @@ export default function Navbar() {
     { name: "Drainage Solutions", href: "/Drainage" },
     { name: "Excavation", href: "/Excavation" },
     { name: "Fence Installation", href: "/Fence" },
-    { name: "Demoliton", href: "/Excavation" },
+    { name: "Demolition", href: "/Excavation" },
   ];
   return (
     <nav className="w-full bg-red-900 shadow-md fixed top-0 left-0 z-50">
@@ -117,7 +117,7 @@ export default function Navbar() {
           <img
             src={biglogo} // <-- replace with your logo path
             alt="MySite Logo"
-            className="h-30 w-auto object-contain rounded-xl "
+            className="h-25 w-auto object-contain rounded-xl "
           />
         </Link>
 
