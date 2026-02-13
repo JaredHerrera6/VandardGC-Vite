@@ -7,6 +7,7 @@ import VandardIcon from "./VandardIcon";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
+import ContactUs from "../routes/ContactUs.jsx"
 import "../App.css"
 /*function Navbar() {
   return (
@@ -132,9 +133,9 @@ export default function Navbar() {
 
             {/* Home Nav Button */}
             <li>
-              <a href="/" className="hover:text-white transition">
+              <Link to="/" className="hover:text-white transition">
                 Home
-              </a>
+              </Link>
             </li>
 
             {/* Services Dropdown */}
@@ -148,12 +149,12 @@ export default function Navbar() {
                 <ul className="py-2">
                   {services.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
+                      <Link
+                        to={item.href}
                         className="block px-4 py-2 hover:bg-gray-100 rounded-lg text-red-900"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -162,12 +163,12 @@ export default function Navbar() {
             </li>
             {links.map((link) => (
               <li key={link.name}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className="hover:text-white transition-colors duration-200"
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
             
@@ -176,7 +177,7 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <motion.a
-            href="/ContactUs"
+            href={ContactUs}
             whileTap={{ scale: 0.95 }}
             whileHover={{ scale: 1.05 }}
             className="bg-red-900 text-white px-5 py-2 rounded-xl font-semibold shadow-md hover:bg-red-950 transition"
@@ -210,13 +211,13 @@ export default function Navbar() {
             <ul className="flex flex-col items-center gap-6 py-6 text-xl font-semibold">
               {mobileLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     onClick={() => setIsOpen(false)}
                     className="hover:text-red-900 transition-colors duration-200"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
