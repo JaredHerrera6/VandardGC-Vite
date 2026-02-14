@@ -483,8 +483,8 @@ font-size: 15px;
 }
 @media(max-width:600px){
   .home-slider{
-    width:410px;
-    height: 450px;
+    width:400px;
+    height: 500px;
   }
 }
 @media(max-width:1000px){
