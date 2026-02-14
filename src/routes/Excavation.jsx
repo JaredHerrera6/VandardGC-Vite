@@ -75,7 +75,7 @@ function Excavation() {
         </div>
       </div>
       <div className="homegallery-wrapper">
-        <h1 className="homegallery-header">Recent Drainage Solutions</h1>
+        <h1 className="homegallery-header">Recent Excavation/Demolition Projects</h1>
         <div className="home-gallery">
           {ExcavationPicData.map((item, index) => {
             return Gallerycards(item);
