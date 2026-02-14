@@ -65,7 +65,7 @@ function ContactUs() {
         </h3>
       </div>
       <div className="slider-quote">
-        <div className="home-slider" style={containerStyles}>
+        <div className="home-slider">
           <ImageSlider slides={slides} />
         </div>
         <div className="quote-box">
