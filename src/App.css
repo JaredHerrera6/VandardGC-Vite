@@ -614,8 +614,7 @@ input{
   flex-direction:row ;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  
+  height:max-content;
 }
 .servicearea-list {
   display: flex;

@@ -20,7 +20,7 @@ const SERVICE_ID = import.meta.env.VITE_APP_EMAIL_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_APP_EMAIL_TEMPLATE_ID;
 const FORMID = import.meta.env.VITE_APP_EMAIL_FORM;
 import  { useState, useEffect } from 'react';
-
+import MarylandCitiesSection from "../components/MdSections";
 function Home() {
   const slides = [
     {
@@ -196,7 +196,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="serviceareas-wrapper">
+      {/*<div className="serviceareas-wrapper">
         <h1 className="mainService-header">Where We Work</h1>
         <div
           className="service-areas "
@@ -224,10 +224,12 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div>*/}
+      <MarylandCitiesSection/>
     </div>
   );
 }
+
 
 //The Form that will allow customers to send email to the Owner
 function Mailer() {

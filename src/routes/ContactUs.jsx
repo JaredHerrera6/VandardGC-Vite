@@ -15,6 +15,7 @@ import { FaFileContract } from "react-icons/fa";
 const SERVICE_ID = import.meta.env.VITE_APP_EMAIL_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_APP_EMAIL_TEMPLATE_ID;
 const FORMID = import.meta.env.VITE_APP_EMAIL_FORM;
+import MarylandCitiesSection from "../components/MdSections";
 function ContactUs() {
   const slides = [
     {
@@ -73,35 +74,7 @@ function ContactUs() {
         </div>
       </div>
 
-      <div className="serviceareas-wrapper">
-        <h1 className="mainService-header">Where We Work</h1>
-        <div 
-          className="service-areas" 
-          style={{ backgroundImage: `url(${marylandbackground})` }}
-        >
-          <img src={maryland} alt="maryland image" />
-          <div className="city-list">
-            <div className="serviceArea-header">
-              <h1>Areas Serviced</h1>
-            </div>
-            <div className="list-wrapper">
-              <ul className="servicearea-list">
-                <li>Waldorf</li>
-                <li>La Plata</li>
-                <li>Brandywine</li>
-                <li>Clinton</li>
-                <li>Annapolis</li>
-              </ul>
-              <ul className="servicearea-list">
-                <li>Laurel</li>
-                <li>Frederick</li>
-                <li>Silver Spring</li>
-                <li>& More!</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MarylandCitiesSection/>
     </div>
   );
 }
