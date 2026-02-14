@@ -471,9 +471,21 @@ font-size: 15px;
   padding:1.5rem;
   
 }
-@media(max-width:450px){
+/*@media(max-width:450px){
   .email_form{
     width:80%;
+  }
+}*/
+
+@media(max-width:800px){
+  .ImageSlider{
+    width:80%;
+  }
+}
+@media(max-width:1000px){
+  .slider-quote{
+    display: flex;
+    flex-direction: column;
   }
 }
 label{
