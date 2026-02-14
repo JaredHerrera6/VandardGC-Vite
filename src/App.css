@@ -459,6 +459,7 @@ font-size: 15px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: auto;
 }
 .email_form{
   display: flex;
@@ -476,10 +477,14 @@ font-size: 15px;
     width:80%;
   }
 }*/
-
-@media(max-width:800px){
-  .ImageSlider{
-    width:80%;
+.home-slider{
+  height: 600px;
+  width: 600px;
+}
+@media(max-width:600px){
+  .home-slider{
+    width:450px;
+    height: 450px;
   }
 }
 @media(max-width:1000px){

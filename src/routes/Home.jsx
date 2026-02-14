@@ -19,6 +19,8 @@ import marylandbackground from "../pictures/maryland-background.jpg";
 const SERVICE_ID = import.meta.env.VITE_APP_EMAIL_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_APP_EMAIL_TEMPLATE_ID;
 const FORMID = import.meta.env.VITE_APP_EMAIL_FORM;
+import  { useState, useEffect } from 'react';
+
 function Home() {
   const slides = [
     {
@@ -57,7 +59,7 @@ function Home() {
         </h3>
       </div>
       <div className="slider-quote">
-        <div className="home-slider" style={containerStyles}>
+        <div className="home-slider" >
           <ImageSlider slides={slides} />
         </div>
         <div className="quote-box">

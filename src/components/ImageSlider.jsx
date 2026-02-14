@@ -3,7 +3,6 @@ import { useState } from "react";
 const slideStyles = {
   width: "100%",
   height: "100%",
-  
   backgroundSize: "cover",
   backgroundPosition: "center",
   transition: "ease-out 1s"
