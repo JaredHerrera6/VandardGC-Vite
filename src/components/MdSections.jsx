@@ -12,6 +12,8 @@ const defaultCities = [
   "Towson",
   "Bowie",
   "Ellicott City",
+  "Waldorf",
+  "Lothian"
 ];
 
 const MarylandCitiesSection = ({ cities = defaultCities }) => {

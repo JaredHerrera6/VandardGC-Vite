@@ -67,7 +67,7 @@ import { LuFacebook } from "react-icons/lu";
 export default Footer;*/
 export default function Footer() {
   return (
-    <footer className="bg-red-900 text-gray-300">
+    <footer className="bg-red-900 text-gray-100">
       <div className="max-w-7xl mx-auto px-6 py-12">
         
         {/* Top Section */}
@@ -85,7 +85,7 @@ export default function Footer() {
   
               </span>
             </div>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-100">
               Quality Construction Services and Solutions
             </p>
           </div>
@@ -134,7 +134,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
+        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-300">
           © {new Date().getFullYear()} Vandard General Contracting LLC. All rights reserved.
         </div>
 

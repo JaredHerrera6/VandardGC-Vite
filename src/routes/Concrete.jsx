@@ -5,6 +5,71 @@ import patio from "../pictures/concrete-5.jpg";
 import slab from "../pictures/concrete-9.jpg";
 import Gallerycards from "../components/Gallerycards";
 import ConcretePicData from "../PicData/ConcretePicData";
+import ServicesSection from "../components/ServiceCards";
+const serviceData = [
+    {
+      title: "Driveways",
+      description:
+        "Our professional concrete driveway installation delivers a durable, weather-resistant surface that enhances curb appeal, supports heavy loads, and provides long-lasting performance you can rely on.",
+      image:
+        driveway,
+      features: [
+        "New Concrete Driveway Installation",
+        "Stamped Concrete Driveway",
+        "Driveway Extension",
+        "Full Concrete Driveway Replacement",
+      ],
+      price: "$10/sqft",
+
+    },
+    {
+      title: "Side Walks",
+      description:
+        "Our concrete sidewalk installation provides a smooth, durable, and slip-resistant surface that improves safety, enhances curb appeal, and stands up to heavy foot traffic and changing weather conditions.",
+      image:
+        sidewalk,
+      features: [
+        "Broom Finish",
+        "Stamped Concrete",
+        "Colored Concrete",
+        "Exposed Aggregate",
+      ],
+      price: "$10/sqft",
+      popular: false,
+    },
+    {
+      title: "Slabs",
+      description:
+        "Our concrete slab installation delivers a strong, level, and long-lasting foundation designed to support structures, equipment, and heavy loads with dependable durability and precision.",
+      image:
+        slab,
+      features: [
+        "Garage Slabs",
+        "Trowel/Smooth Finish",
+        "Foundations",
+        "Shed Slabs",
+        "Metal Builing Slabs"
+      ],
+      price: "$10/sqft",
+      popular: false,
+    },
+    {
+      title: "Patios",
+      description:
+        "Our concrete patio installation creates a durable, low-maintenance outdoor space that enhances your home’s value and provides a strong, stylish foundation for relaxing and entertaining year-round.",
+      image:
+        patio,
+      features: [
+        "Broom Finish",
+        "Stamped Concrete",
+        "Colored Concrete",
+        "Exposed Aggregate",
+        "Concrete Steps"
+      ],
+      price: "$10/sqft",
+      popular: false,
+    },
+  ];
 function Concrete() {
   return (
     <div className="page-wrapper">
@@ -15,84 +80,10 @@ function Concrete() {
           Professionals
         </h3>
       </div>
-      <div className="concreteservice-wrapper">
-        {/*Concrete Drivway Service Card */}
-        <div className="service-card">
-          <div className="card-image">
-            <img src={driveway} alt="concrete driveway" />
-          </div>
-          <div className="card-text">
-            <div className="cardservice-header">
-              <h3>Driveways</h3>
-            </div>
-            <div className="card-text">
-              <p>
-                A New Concrete driveway will give your home a new clean look
-                aswell as adding market value to your home. In addition to
-                adding curb appeal and home value , our driveway installment
-                services will give our clients peace of mind that they have
-                recieved a durable and long lasting product.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/*Concrete Patio Service Card */}
-        <div className="service-card">
-          <div className="card-image">
-            <img src={sidewalk} alt="concrete sidewalk " />
-          </div>
-          <div className="card-text">
-            <div className="cardservice-header">
-              <h3>Sidewalks</h3>
-            </div>
-            <div className="card-text">
-              <p>
-                Our concrete Sidewalks and walkways help our customers add both
-                accessibility and safety to their propterites. We offer various
-                finishes and colors to make our installations fully
-                customizable.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/*Concrete Sidewalk Service Card */}
-        <div className="service-card">
-          <div className="card-image">
-            <img src={patio} alt="concrete patio" />
-          </div>
-          <div className="card-text">
-            <div className="cardservice-header">
-              <h3>Patios</h3>
-            </div>
-            <div className="card-text">
-              <p>
-                Our Patio Installation Services allow our clients to transform
-                their backyards their new Hangout Spot. We allow our clients to
-                fully customize and help them design the patio of their dreams.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/*Concrete Slab Service Card */}
-        <div className="service-card">
-          <div className="card-image">
-            <img src={slab} alt="concrete slab" />
-          </div>
-          <div className="card-text">
-            <div className="cardservice-header">
-              <h3>Slabs</h3>
-            </div>
-            <div className="card-text">
-              <p>
-                We Install Slabs to help our clients take the initial step in
-                their new builds. Our slabs serve as the foundation to a new
-                project such as pole barns, house additions, sheds, and much
-                more!!!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/*Services Card Components*/}
+      <ServicesSection services={serviceData} columns={4}/>
+      
+      
       <div className="homegallery-wrapper">
         <h1 className="homegallery-header">Recent Concrete Works</h1>
         <div className="home-gallery">
