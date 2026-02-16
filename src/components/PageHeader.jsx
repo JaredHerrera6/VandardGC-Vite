@@ -41,10 +41,10 @@ const PageHeader = ({
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-4 text-lg rounded-2xl shadow-xl transition"
+            className="bg-red-900 hover:bg-red-600 text-black font-semibold px-8 py-4 text-lg rounded-2xl shadow-xl transition"
             onClick={() => window.location.href = "/ContactUs"}
           >
-            Free Estimate
+            Get Free Estimate
           </button>
 
           <a href={`tel:${phoneNumber}`}>

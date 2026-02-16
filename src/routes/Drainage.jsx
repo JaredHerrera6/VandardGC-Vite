@@ -5,6 +5,7 @@ import downspout from "../pictures/drain-2.JPG";
 import DrainpicData from "../PicData/DrainPicData";
 import Gallerycards from "../components/Gallerycards";
 import ServicesSection from "../components/ServiceCards";
+import PageHeader from "../components/PageHeader";
 const serviceData = [
     {
       title: "Drainage Systems ",
@@ -56,13 +57,13 @@ const serviceData = [
 function Drainage() {
   return (
     <div className="page-wrapper">
-      <div className="page-header">
-        <h1>Drainage Solutions</h1>
-        <h3>
-          Effective and Reliable Storm Drain Solution services by Local
-          Professionals
-        </h3>
-      </div>
+
+      <PageHeader 
+        title={"Drainage Solutions"} 
+        subtitle={"Effective and Reliable Storm Drain Services by local Professionals"}
+        backgroundImage={drain}
+        phoneNumber={"202-855-4942"}
+      />
 
       {/*Services Card Components*/}
       <ServicesSection services={serviceData} columns={3}/>

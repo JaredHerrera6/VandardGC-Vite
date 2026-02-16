@@ -4,6 +4,8 @@ import Blockwall from "../pictures/Masonry-3.jpg";
 import Concretewall1 from "../pictures/concretewall-2.jpg";
 import WallPicData from "../PicData/WallPicData";
 import ServicesSection from "../components/ServiceCards";
+import PageHeader from "../components/PageHeader";
+import wallbg from "../pictures/concretewall-2.jpg"
 const serviceData = [
     {
       title: "Block Walls ",
@@ -42,6 +44,14 @@ const serviceData = [
 function Walls() {
   return (
     <div className="page-wrapper">
+      <PageHeader 
+        title={"Retaining Wall Services"} 
+        subtitle={"Premium, Reliable, and Durable Retaining Wall Installation Services by local Professionals"}
+        backgroundImage={wallbg}
+        phoneNumber={"202-855-4942"}
+      />
+
+
       <div className="page-header">
         <h1>Retaining Wall Services</h1>
         <h3>

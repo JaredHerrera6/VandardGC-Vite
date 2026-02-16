@@ -5,7 +5,8 @@ import pfence from "../pictures/fence-1.JPG";
 import Gallerycards from "../components/Gallerycards";
 import FencePicData from "../PicData/FencePicData";
 import ServicesSection from "../components/ServiceCards";
-
+import PageHeader from "../components/PageHeader";
+import fencebg from "../pictures/fence-9.JPG"
 const serviceData = [
     {
       title: "Vinyl",
@@ -40,12 +41,15 @@ const serviceData = [
 function Fence() {
   return (
     <div className="page-wrapper">
-      <div className="page-header">
-        <h1>Fencing Services</h1>
-        <h3>
-          Premium and durable Fencing solution Provided by Local Professionals
-        </h3>
-      </div>
+
+      <PageHeader 
+        title={"Fencing Services"} 
+        subtitle={"Premium and durable Fencing solution Provided by Local Professionals"}
+        backgroundImage={fencebg}
+        phoneNumber={"202-855-4942"}
+      />
+
+      
       {/*Services Card Components*/}
       <ServicesSection services={serviceData} columns={2}/>
 

@@ -5,6 +5,8 @@ import trench from "../pictures/trench.JPG";
 import ExcavationPicData from "../PicData/ExcavationPicData";
 import Gallerycards from "../components/Gallerycards";
 import ServicesSection from "../components/ServiceCards";
+import PageHeader from "../components/PageHeader";
+import excavationbg from "../pictures/excavation-2.jpeg"
 const serviceData = [
     {
       title: "Excavation",
@@ -56,13 +58,14 @@ const serviceData = [
 function Excavation() {
   return (
     <div className="page-wrapper">
-      <div className="page-header">
-        <h1>Excavation and Demolition Services</h1>
-        <h3>
-          Take the First steps to you projects and transformation with our
-          Excavation/Demolition Services
-        </h3>
-      </div>
+
+      <PageHeader 
+        title={"Excavation & Demolition Services"} 
+        subtitle={"Take the First steps to you projects and transformation with our Excavation/Demolition Services"}
+        backgroundImage={excavationbg}
+        phoneNumber={"202-855-4942"}
+      />
+
       {/*Services Card Components*/}
       <ServicesSection services={serviceData} columns={3}/>
     

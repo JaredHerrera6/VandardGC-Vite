@@ -6,6 +6,8 @@ import slab from "../pictures/concrete-9.jpg";
 import Gallerycards from "../components/Gallerycards";
 import ConcretePicData from "../PicData/ConcretePicData";
 import ServicesSection from "../components/ServiceCards";
+import concretebg from "../pictures/concrete-28.JPG"
+import PageHeader from "../components/PageHeader";
 const serviceData = [
     {
       title: "Driveways",
@@ -74,14 +76,13 @@ function Concrete() {
   return (
     <div className="page-wrapper">
       
+      <PageHeader 
+        title={"Concrete Contractor"} 
+        subtitle={"Premium, Reliable, and Durable Concrete Installation Services by local Professionals"}
+        backgroundImage={concretebg}
+        phoneNumber={"202-855-4942"}
+      />
 
-      <div className="page-header">
-        <h1>Concrete Contractor</h1>
-        <h3>
-          Premium, Reliable, and Durable Concrete installation services by Local
-          Professionals
-        </h3>
-      </div>
       {/*Services Card Components*/}
       <ServicesSection services={serviceData} columns={4}/>
       
