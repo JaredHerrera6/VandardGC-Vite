@@ -1,6 +1,7 @@
 import React from "react";
 import maryland from "../pictures/maryland.jpg";
 import marylandbackground from "../pictures/maryland-background.jpg"
+import MarylandCitiesSection from "../components/MdSections";
 function AboutUs() {
   return (
     <div className="page-wrapper">
@@ -46,36 +47,8 @@ function AboutUs() {
           built to last for our Maryland customers.
         </p>
       </div>
-
-      <div className="serviceareas-wrapper">
-        <h1 className="mainService-header">Where We Work</h1>
-        <div 
-          className="service-areas"
-          style={{ backgroundImage: `url(${marylandbackground})` }}
-        >
-          <img src={maryland} alt="maryland image" />
-          <div className="city-list">
-            <div className="serviceArea-header">
-              <h1>Areas Serviced</h1>
-            </div>
-            <div className="list-wrapper">
-              <ul className="servicearea-list">
-                <li>Waldorf</li>
-                <li>La Plata</li>
-                <li>Brandywine</li>
-                <li>Clinton</li>
-                <li>Annapolis</li>
-              </ul>
-              <ul className="servicearea-list">
-                <li>Laurel</li>
-                <li>Frederick</li>
-                <li>Silver Spring</li>
-                <li>& More!</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MarylandCitiesSection/>
+      
     </div>
   );
 }

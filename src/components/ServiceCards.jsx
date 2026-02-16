@@ -4,7 +4,7 @@ import driveway from "../pictures/concrete-8.JPG"
 import sidewalk from "../pictures/concrete-6.jpg"
 import patio from "../pictures/concrete-5.jpg"
 import slab from "../pictures/concrete-9.jpg"
-// Reusable ServiceCard Component
+// Reusable ServiceCard Component 
 export function ServiceCard({ service, index }) {
   return (
     <motion.div

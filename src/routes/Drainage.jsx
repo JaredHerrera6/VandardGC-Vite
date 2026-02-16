@@ -4,6 +4,55 @@ import drain from "../pictures/drain-4.JPG";
 import downspout from "../pictures/drain-2.JPG";
 import DrainpicData from "../PicData/DrainPicData";
 import Gallerycards from "../components/Gallerycards";
+import ServicesSection from "../components/ServiceCards";
+const serviceData = [
+    {
+      title: "Drainage Systems ",
+      description:
+        "Proper drainage is essential for homeowners because it prevents water damage, protects foundations, reduces erosion, and helps maintain the long-term safety and value of the property.",
+      image:
+        drain,
+      features: [
+        "Fench Drain Installations",
+        "PVC drain systems",
+        "Channel Drains",
+        "Drainage Catch Basin Installation",
+      ],
+      price: "$$",
+      popular:"true"
+    },
+    {
+      title: "Water Proofing",
+      description:"Proper waterproofing is essential for homeowners because it prevents moisture intrusion, protects structural integrity, and safeguards against mold, rot, and costly long-term damage.",
+      image:
+        waterproof,
+      features: [
+        "Foundation waterproofing",
+        "Sump Pump Installations",
+        "Exterior Wall Water Proofing",
+        "Foundwation Crack Repairs"
+      ],
+      price: "$$$",
+      popular: false,
+    },
+    {
+      title: "Downspouts",
+      description:
+        "Proper downspout redirection is essential for homeowners because it directs rainwater away from the foundation, preventing erosion, basement flooding, and costly structural damage.",
+      image:
+        downspout,
+      features: [
+        "Downspout Extensions ",
+        "Underground Drain Lines",
+        "Drainage Tie-ins",
+        "Pop-up Drain Emitters"
+      ],
+      price: "$$",
+      popular: false,
+    },
+  
+  ];
+
 function Drainage() {
   return (
     <div className="page-wrapper">
@@ -14,66 +63,10 @@ function Drainage() {
           Professionals
         </h3>
       </div>
-      <div className="wallservice-wrapper">
-        {/*Block wallS Service Card */}
-        <div className="service-card">
-          <div className="card-image">
-            <img src={drain} alt="BlockWall" />
-          </div>
-          <div className="card-text">
-            <div className="cardservice-header">
-              <h3>Drains</h3>
-            </div>
-            <div className="card-text">
-              <p>
-                Our Cinder Block Retaining Walls offer our customers with an
-                affordable and fully functionional solution for various
-                applications. Contact us now to learn more about how our cinder
-                block wall installations could help you achieve your desired
-                goals.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/*Waterproof Service Card */}
-        <div className="service-card">
-          <div className="card-image">
-            <img src={waterproof} alt="Concrete wall " />
-          </div>
-          <div className="card-text">
-            <div className="cardservice-header">
-              <h3>Water Proofing</h3>
-            </div>
-            <div className="card-text">
-              <p>
-                Our Concrete walls serve as a our most industral grade solution
-                for retaining walls. Our concrete wall services are very diverse
-                and can be applied to many different areas. Contact us today to
-                learn more.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/*Downspouts wall  Service Card */}
-        <div className="service-card">
-          <div className="card-image">
-            <img src={downspout} alt="Decorative wall" />
-          </div>
-          <div className="card-text">
-            <div className="cardservice-header">
-              <h3>DownSpouts</h3>
-            </div>
-            <div className="card-text">
-              <p>
-                We offer a wide selection of retaining wall services to add some
-                eye catching features to our clints properties. From garden
-                decor to seating areas, we can turn any boring site to an eye
-                catching and functional decoration.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      {/*Services Card Components*/}
+      <ServicesSection services={serviceData} columns={3}/>
+
       <div className="homegallery-wrapper">
         <h1 className="homegallery-header">Recent Drainage Solutions</h1>
         <div className="home-gallery">
