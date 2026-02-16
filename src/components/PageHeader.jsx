@@ -6,12 +6,12 @@ const PageHeader = ({
   subtitle,
   backgroundImage,
   phoneNumber,
-  height = "70vh",
+  height = "85vh",
 }) => {
-  return (
+  return ( 
     <header
       style={{ height }}
-      className="relative w-full flex items-center justify-center text-center overflow-hidden"
+      className=" relative w-full flex items-center justify-center text-center overflow-hidden"
     >
       {/* Background Image */}
       <div
