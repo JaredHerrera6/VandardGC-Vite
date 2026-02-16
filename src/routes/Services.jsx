@@ -8,13 +8,22 @@ import demohome from "../pictures/demo-1.JPG";
 import fencehome from "../pictures/fence-9.JPG";
 import { Link } from "react-router-dom";
 import { FiArrowRightCircle } from "react-icons/fi";
+import servicebg from "../pictures/concrete-5.jpg"
+import PageHeader from "../components/PageHeader";
 
 function Services() {
   return (
+    
     <div
       className="services"
-      style={{ paddingTop: "22vh", textAlign: "center" }}
+      style={{ textAlign: "center" }}
     >
+      <PageHeader 
+        title={"Our Services"} 
+        subtitle={"At Vandard General Contracting we offer several Quality cinstruction services and solutions"}
+        backgroundImage={servicebg}
+        phoneNumber={"202-855-4942"}
+      />
       <div className="services-header">
         <h3 className="services-top" style={{ font: "32px" }}>
           Our Services

@@ -18,6 +18,7 @@ const FORMID = import.meta.env.VITE_APP_EMAIL_FORM;
 import MarylandCitiesSection from "../components/MdSections";
 import contactusbg from "../pictures/concrete-7.jpg"
 import PageHeader from "../components/PageHeader";
+import Mailer from "../components/Mailer";
 function ContactUs() {
   const slides = [
     {
@@ -76,7 +77,7 @@ function ContactUs() {
           <ImageSlider slides={slides} />
         </div>
         <div className="quote-box">
-          <Mailer />
+          <Mailer/>
         </div>
       </div>
 
@@ -85,85 +86,6 @@ function ContactUs() {
   );
 }
 
-//The Form that will allow customers to send email to the Owner
-function Mailer() {
-    const sendEmail = (e) => {
-    e.preventDefault();
 
-    emailjs.sendForm(
-      SERVICE_ID,
-      TEMPLATE_ID,
-      e.target,
-      FORMID
-    )
-    .then(() => {
-      alert("Message sent!");
-    })
-    .catch((error) => {
-      console.log(error);
-      alert("Failed to send.");
-    });
-    e.target.reset();
-  };
-  
-  return (
-    <div>
-      <form className="email_form" onSubmit={sendEmail}>
-        <div className="contract-icon">
-          <FaFileContract />
-        </div>
-        <h2 className="quote-header">Get a Free Quote</h2>
-        <label htmlFor="first_name">First Name</label>
-        <input
-          type="text"
-          id="first_name"
-          placeholder="E.g, John"
-          name="first-name"
-          required
-        ></input>
-
-        <label htmlFor="last_name">Last Name</label>
-        <input
-          type="text"
-          id="last_name"
-          placeholder="E.g., Cena"
-          name="last-name"
-          required
-        ></input>
-
-        <label htmlFor="_email">Email</label>
-        <input
-          type="email"
-          id="_email"
-          placeholder="E.g., customer@gmail.com"
-          name="email"
-          required
-        ></input>
-
-        <label htmlFor="phone_number">Phone #</label>
-        <input
-          type="tel"
-          id="phone_number"
-          placeholder="E.g.,111-222-3333"
-          name="phone_number"
-          required
-        ></input>
-
-        <label htmlFor="emessage">Service Description </label>
-        <textarea
-          type="message"
-          rows="5"
-          id="emessage"
-          placeholder="Enter Message ..."
-          name="emessage"
-          required
-        ></textarea>
-        <br />
-
-        <input type="submit" value="Submit" id="send_email" />
-      </form>
-    </div>
-  );
-}
 
 export default ContactUs;

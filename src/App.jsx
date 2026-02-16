@@ -14,13 +14,14 @@ import Walls from "./routes/Walls";
 import Excavation from "./routes/Excavation";
 import Demolition from "./routes/Demolition";
 import Fence from "./routes/Fence";
-
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <>
     
     <div className="page-container">
       <Router>
+        <ScrollToTop/>
         <div className="navbar-container">
 
         </div>
