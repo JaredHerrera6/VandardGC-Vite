@@ -2,7 +2,9 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { FaFileContract } from "react-icons/fa";
-
+const SERVICE_ID = import.meta.env.VITE_APP_EMAIL_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_APP_EMAIL_TEMPLATE_ID;
+const FORMID = import.meta.env.VITE_APP_EMAIL_FORM;
 function Mailer() {
   const sendEmail = (e) => {
     e.preventDefault();
