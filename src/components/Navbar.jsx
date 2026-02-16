@@ -9,82 +9,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import ContactUs from "../routes/ContactUs.jsx";
 import "../App.css";
-/*function Navbar() {
-  return (
-    <div className="navbar">
-      <ul>
-        <li className="navbar-logo" style={{ padding: "0" }}>
-          <img
-            className="applogo"
-            src={biglogo}
-            alt="logo"
-            style={{ padding: "0", borderRadius: "20px" }}
-          />
-        </li>
-        <div className="links">
-          <li>
-            <Link to="/" className="navbar-link">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/Services">Services</Link>
-            <ul className="dropdown">
-              <li>
-                <Link to="/Concrete">Concrete Installation</Link>
-              </li>
-              <li>
-                <Link to="/Walls">Retaining Walls</Link>
-              </li>
-              <li>
-                <Link to="/Drainage">Drainage Solutions</Link>
-              </li>
-              <li>
-                <Link to="/Excavation"> Excavation</Link>
-              </li>
-              <li>
-                <Link to="/Fence">Fence Installation</Link>
-              </li>
-              <li>
-                <Link to="/Demolition">Demolition</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link to="/Gallery" className="navbar-link">
-              Our Work
-            </Link>
-          </li>
-          <li>
-            <Link to="/AboutUs" className="navbar-link">
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link to="/ContactUs" className="navbar-link">
-              Contact Us
-            </Link>
-          </li>
-        </div>
-        <li>
-          <Link to="/ContactUs" className="contact-button">
-            Free Quote
-          </Link>
-        </li>
-      </ul>
-    </div>
-  );
-}
 
-export default Navbar;
-*/
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
     { name: "About Us", href: "/AboutUs" },
-    { name: "Contact Us", href: "ContactUs" },
+    { name: "Contact Us", href: "/ContactUs" },
     { name: "Our Work", href: "/Gallery" },
   ];
   const mobileLinks = [

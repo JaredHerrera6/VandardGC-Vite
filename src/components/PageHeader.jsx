@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const PageHeader = ({
   title,
   subtitle,
@@ -40,12 +40,13 @@ const PageHeader = ({
         )}
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button
+          <Link
+            to="/ContactUs"
             className="bg-red-900 hover:bg-red-600 text-black font-semibold px-8 py-4 text-lg rounded-2xl shadow-xl transition"
-            onClick={() => window.location.href = "/ContactUs"}
+            
           >
             Get Free Estimate
-          </button>
+          </Link>
 
           <a href={`tel:${phoneNumber}`}>
             <button
