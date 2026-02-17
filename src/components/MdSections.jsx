@@ -1,19 +1,20 @@
 import React from "react";
 import marylandbackground from "../pictures/maryland-background.jpg"
+
 // You can also pass cities as props instead of using the default list
 const defaultCities = [
-  "Baltimore",
-  "Annapolis",
-  "Columbia",
-  "Silver Spring",
-  "Rockville",
-  "Gaithersburg",
-  "Frederick",
-  "Towson",
+  "Accokeek",
+  "Brandywine",
+  "Clinton",
+  "Dunkirk",
+  "Hughesville",
+  "La Plata",
   "Bowie",
-  "Ellicott City",
-  "Waldorf",
-  "Lothian"
+  "Lothian",
+  "Owings",
+  "Prince Frederick",
+  "Upper Marlboro",
+  "Waldorf"
 ];
 
 const MarylandCitiesSection = ({ cities = defaultCities }) => {

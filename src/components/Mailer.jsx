@@ -43,7 +43,7 @@ function Mailer() {
         </p>
 
         <form onSubmit={sendEmail} className="space-y-5">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5"> 
             <div>
               <label className="block text-sm text-neutral-300 mb-1">
                 First Name

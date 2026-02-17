@@ -6,24 +6,16 @@ import wallhome from "../pictures/Masonry-3.jpg";
 import excavationhome from "../pictures/trench.JPG";
 import demohome from "../pictures/demo-1.JPG";
 import fencehome from "../pictures/fence-9.JPG";
-import maryland from "../pictures/maryland.jpg";
 import { Link } from "react-router-dom";
 import image1 from "../pictures/Stamped-9.jpg";
 import ImageSlider from "../components/ImageSlider";
-import emailjs from "@emailjs/browser"
 import { FiArrowRightCircle } from "react-icons/fi";
 import Gallerycards from "../components/Gallerycards";
 import HomePicData from "../PicData/HomePicData";
-import marylandbackground from "../pictures/maryland-background.jpg";
-const SERVICE_ID = import.meta.env.VITE_APP_EMAIL_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_APP_EMAIL_TEMPLATE_ID;
-const FORMID = import.meta.env.VITE_APP_EMAIL_FORM;
-import  { useState, useEffect } from 'react';
 import MarylandCitiesSection from "../components/MdSections";
 import PageHeader from "../components/PageHeader";
 import background5 from "../pictures/concrete-5.jpg"
-import { motion } from "framer-motion";
-import { FaFileContract } from "react-icons/fa";
+import Mailer from "../components/Mailer";
 function Home() {
   const slides = [
     {
@@ -210,131 +202,7 @@ function Home() {
 
 
 
-function Mailer() {
-  const sendEmail = (e) => {
-    e.preventDefault();
 
-    emailjs
-      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, FORMID)
-      .then(() => {
-        alert("Message sent!");
-      })
-      .catch((error) => {
-        console.log(error);
-        alert("Failed to send.");
-      });
-
-    e.target.reset();
-  };
-
-  return (
-    <div className="min-h-screen flex items-center justify-center p-6">
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="w-full max-w-2xl bg-neutral-900/90 backdrop-blur-xl border border-red-900/60 rounded-2xl shadow-[0_0_50px_rgba(127,29,29,0.25)] p-8 md:p-12"
-      >
-        <div className="flex justify-center mb-4 text-red-700 text-4xl">
-          <FaFileContract />
-        </div>
-
-        <h2 className="text-3xl md:text-4xl font-extrabold text-white text-center tracking-wider">
-          Premium Project Consultation
-        </h2>
-
-        <div className="w-20 h-[2px] bg-gradient-to-r from-red-900 via-yellow-600 to-red-900 mx-auto my-6"></div>
-
-        <p className="text-neutral-400 text-center mb-8">
-          Exceptional craftsmanship. Refined execution. Tell us about your project.
-        </p>
-
-        <form onSubmit={sendEmail} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label className="block text-xs font-semibold text-red-800 mb-2 uppercase tracking-[2px]">
-                First Name
-              </label>
-              <input
-                type="text"
-                id="first_name"
-                name="first-name"
-                placeholder="E.g., John"
-                required
-                className="w-full px-4 py-3 rounded-lg bg-black border border-neutral-800 text-black placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-red-900 transition"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-semibold text-red-800 mb-2 uppercase tracking-[2px]">
-                Last Name
-              </label>
-              <input
-                type="text"
-                id="last_name"
-                name="last-name"
-                placeholder="E.g., Cena"
-                required
-                className="w-full px-4 py-3 rounded-lg bg-black border border-neutral-800 text-black placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-red-900 transition"
-              />
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label className="block text-xs font-semibold text-red-800 mb-2 uppercase tracking-[2px]">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="_email"
-                name="email"
-                placeholder="E.g., customer@gmail.com"
-                required
-                className="w-full px-4 py-3 rounded-lg bg-black border border-neutral-800 text-black placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-red-900 transition"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-semibold text-red-800 mb-2 uppercase tracking-[2px]">
-                Phone Number
-              </label>
-              <input
-                type="tel"
-                id="phone_number"
-                name="phone_number"
-                placeholder="E.g., 111-222-3333"
-                required
-                className="w-full px-4 py-3 rounded-lg bg-black border border-neutral-800 text-black placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-red-900 transition"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label className="block text-xs font-semibold text-red-800 mb-2 uppercase tracking-[2px]">
-              Service Description
-            </label>
-            <textarea
-              rows="5"
-              id="emessage"
-              name="emessage"
-              placeholder="Enter message..."
-              required
-              className="w-full px-4 py-3 rounded-lg bg-black border border-neutral-800 text-black placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-red-900 transition resize-none"
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            className="w-full bg-gradient-to-r from-red-900 via-yellow-600 to-red-900 hover:brightness-110 text-white font-bold py-4 rounded-lg shadow-lg transition duration-300 tracking-wider"
-          >
-            REQUEST CONSULTATION
-          </button>
-        </form>
-      </motion.div>
-    </div>
-  );
-}
 
 
 export default Home;
