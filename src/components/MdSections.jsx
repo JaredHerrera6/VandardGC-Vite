@@ -1,20 +1,20 @@
 import React from "react";
 import marylandbackground from "../pictures/maryland-background.jpg"
-
+import { Link } from "react-router-dom"
 // You can also pass cities as props instead of using the default list
 const defaultCities = [
-  "Accokeek",
-  "Brandywine",
-  "Clinton",
-  "Dunkirk",
-  "Hughesville",
-  "La Plata",
-  "Bowie",
-  "Lothian",
-  "Owings",
-  "Prince Frederick",
-  "Upper Marlboro",
-  "Waldorf"
+  {name: "Accokeek", path: "/concrete-Accokeek"},
+  {name:"Bowie", path: "/concrete-Bowie"},
+  {name:"Brandywine", path:"/concrete-Brandywine"},
+  {name:"Clinton", path:"/concrete-Clinton"},
+  {name:"Dunkirk", path:"/concrete-Dunkirk"},
+  {name:"Hughesville",path:"/concrete-Hughesville"},
+  {name:"La Plata",path:"/concrete-Laplata"},
+  {name:"Lothian",path:"/concrete-Lothian"},
+  {name:"Owings", path:"/concrete-Owings"},
+  {name:"Prince Frederick",path:"/concrete-PrinceFrederick"},
+  {name:"Upper Marlboro",path:"/concrete-uppermarlboro"},
+  {name:"Waldorf",path:"/concrete-Waldorf"}
 ];
 
 const MarylandCitiesSection = ({ cities = defaultCities }) => {
@@ -42,8 +42,8 @@ const MarylandCitiesSection = ({ cities = defaultCities }) => {
           We proudly provide professional construction services across the following cities.
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
-          {cities.map((city) => (
+        {/*<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+          {cities.map(() => (
             <div
               key={city}
               className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 shadow-lg hover:bg-white/20 transition duration-300"
@@ -52,6 +52,16 @@ const MarylandCitiesSection = ({ cities = defaultCities }) => {
             </div>
           ))}
         </div>
+        */}
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+          {cities.map((city) => (
+          <div key={city.name} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 shadow-lg hover:bg-white/20 transition duration-300">
+            <Link  to={city.path} className="text-sm md:text-lg font-semibold">{city.name}</Link>
+          </div>
+      ))}
+        </div>
+
       </div>
     </section>
   );

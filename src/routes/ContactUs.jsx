@@ -8,13 +8,6 @@ import image2 from "../pictures/concrete-11.jpeg";
 import image3 from "../pictures/concrete-25.JPG";
 import image4 from "../pictures/concrete-14.jpeg";
 import ImageSlider from "../components/ImageSlider";
-import maryland from "../pictures/maryland.jpg";
-import emailjs from "@emailjs/browser";
-import marylandbackground from "../pictures/maryland-background.jpg";
-import { FaFileContract } from "react-icons/fa";
-const SERVICE_ID = import.meta.env.VITE_APP_EMAIL_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_APP_EMAIL_TEMPLATE_ID;
-const FORMID = import.meta.env.VITE_APP_EMAIL_FORM;
 import MarylandCitiesSection from "../components/MdSections";
 import contactusbg from "../pictures/concrete-7.jpg"
 import PageHeader from "../components/PageHeader";
