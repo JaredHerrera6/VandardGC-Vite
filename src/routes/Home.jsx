@@ -141,7 +141,7 @@ function Home() {
               <p className="top-text">Excavation</p>
               <p className="bottom-text">
                 We offer several Excavation Services from trenches to land
-                clearing. Learn more on your we can provide the best excavatio
+                clearing. Learn more on your we can provide the best excavation
                 services to satisy your needs!!
               </p>
               <p className="card-button">
@@ -188,7 +188,7 @@ function Home() {
         </div>
       </div>
       <div className="homegallery-wrapper">
-        <h1 className="homegallery-header">Recently Completed Works</h1>
+        <h1 className="homegallery-header">Recently Completed Projects</h1>
         <div className="home-gallery">
           {HomePicData.map((item, index) => {
             return Gallerycards(item);

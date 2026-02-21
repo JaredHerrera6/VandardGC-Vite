@@ -88,7 +88,7 @@ function Concrete() {
       
       
       <div className="homegallery-wrapper">
-        <h1 className="homegallery-header">Recent Concrete Works</h1>
+        <h1 className="homegallery-header">Recent Concrete Projects</h1>
         <div className="home-gallery">
           {ConcretePicData.map((item, index) => {
             return Gallerycards(item);

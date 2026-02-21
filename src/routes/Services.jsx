@@ -99,7 +99,7 @@ function Services() {
             <p className="top-text">Excavation</p>
             <p className="bottom-text">
               We offer several Excavation Services from trenches to land
-              clearing. Learn more on your we can provide the best excavatio
+              clearing. Learn more on your we can provide the best excavation
               services to satisy your needs!!
             </p>
             <p className="card-button">
