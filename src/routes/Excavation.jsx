@@ -7,6 +7,7 @@ import Gallerycards from "../components/Gallerycards";
 import ServicesSection from "../components/ServiceCards";
 import PageHeader from "../components/PageHeader";
 import excavationbg from "../pictures/excavation-2.jpeg"
+import MarylandCitiesSection from "../components/MdSections";
 const serviceData = [
     {
       title: "Excavation",
@@ -77,6 +78,7 @@ function Excavation() {
           })}
         </div>
       </div>
+      <MarylandCitiesSection/>
     </div>
   );
 }

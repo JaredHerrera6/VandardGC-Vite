@@ -7,6 +7,7 @@ import FencePicData from "../PicData/FencePicData";
 import ServicesSection from "../components/ServiceCards";
 import PageHeader from "../components/PageHeader";
 import fencebg from "../pictures/fence-9.JPG"
+import MarylandCitiesSection from "../components/MdSections";
 const serviceData = [
     {
       title: "Vinyl",
@@ -61,6 +62,7 @@ function Fence() {
           })}
         </div>
       </div>
+      <MarylandCitiesSection/>
     </div>
   );
 }
