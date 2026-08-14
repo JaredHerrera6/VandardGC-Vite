@@ -1,5 +1,5 @@
 import React from "react";
-import excavation from "../pictures/excavation-1.jpg";
+import excavation from "../pictures/excavation-4.jpeg";
 import demolition from "../pictures/demo-1.JPG";
 import trench from "../pictures/trench.JPG";
 import ExcavationPicData from "../PicData/ExcavationPicData";
@@ -21,7 +21,7 @@ const serviceData = [
         "Land Clearing ",
         "Back Filling & Compaction",
       ],
-      price: "&&&",
+      price: "$$$",
 
     },
     {
@@ -51,7 +51,7 @@ const serviceData = [
         "Foundationa dn footing Trenching",
         "Irrigation and Landscape trenching",
       ],
-      price: "$10/sqft",
+      price: "$$",
       popular: false,
     },
   ]
